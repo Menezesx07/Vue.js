@@ -1,0 +1,19 @@
+1-
+
+const MyNameApp = {                             //constato para exibir os dados no html
+    data() {                                     //passando com a tag criada abaixo #app na div do html
+        return{
+           name: "Rafel",
+        }
+    }
+}
+
+Vue.createApp(MyNameApp).mount("#app"); 		//puxando/jogando informação com a div "app no html"
+
+---------------------------------------------------------------------------------------------------------------
+
+ <form id="app-form">
+        <input type="text" v-model="input_name"> 			   // v-model serve para pegar os dados em tempo real
+	  <input type="submit" value="Enviar" v-on:click="submitForm"> //enviar o formulario (form)
+     </form>
+
